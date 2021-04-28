@@ -1,7 +1,7 @@
 # vue-calc-app
 APPLICATION IS IN THE DEVELOPMENT STAGE
 
-Simple calculator built using Vue.
+Simple calculator built using Vue
 
 ## Project setup
 ```
