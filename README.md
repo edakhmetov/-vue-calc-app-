@@ -1,4 +1,5 @@
 # vue-calc-app
+Application is in the development stage
 
 ## Project setup
 ```
