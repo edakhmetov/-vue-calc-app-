@@ -4,7 +4,7 @@
             <div class="previousOperand"></div>
             <div class="currentOperand"></div>
         </div>
-        <button style="span-two">AC</button>
+        <button class="span-two">AC</button>
         <button>Del</button>
         <button>÷</button>
         <button>1</button>
@@ -21,7 +21,7 @@
         <button>+</button>
         <button>.</button>
         <button>0</button>
-        <button style="span-two">=</button>
+        <button class="span-two">=</button>
     </div>
 </template>
 
@@ -37,7 +37,18 @@ export default {
 <style scoped>
     .main {
         display: flex;
-        flex-direction: column;
-        
+        flex-wrap: wrap;
+        /* flex-direction: column; */
+        align-items: center;
+        width: 400px;
+        margin: auto;
+    }
+    button {
+        width: 100px;
+        height: 100px;
+        outline: none;
+    }
+    .span-two {
+        width: 200px;
     }
 </style>
