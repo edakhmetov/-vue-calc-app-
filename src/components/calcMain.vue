@@ -1,13 +1,13 @@
 <template>
     <div class="main">
         <div class="output">
-            <div class="previousOperand"></div>
+            <div class="previousOperand">{{operand1}}</div>
             <div class="currentOperand"></div>
         </div>
         <button class="span-two">AC</button>
         <button>Del</button>
         <button>÷</button>
-        <button>1</button>
+        <button @click="addNumber()">1</button>
         <button>2</button>
         <button>3</button>
         <button>*</button>
@@ -30,6 +30,17 @@ export default {
     name: 'Calculator',
     props: {
 
+    },
+    data() {
+        return {
+            operand1: '',
+            operand2: '',
+        }
+    },
+    methods: {
+        addNumber () {
+            this.operand1 += `1`;
+        }
     }
 }
 </script>
@@ -38,10 +49,16 @@ export default {
     .main {
         display: flex;
         flex-wrap: wrap;
-        /* flex-direction: column; */
+        justify-content: center;
         align-items: center;
         width: 400px;
         margin: auto;
+    }
+    .output {
+        width: 400px;
+        height: auto;
+        min-height: 100px;
+        word-wrap: break-word;
     }
     button {
         width: 100px;
