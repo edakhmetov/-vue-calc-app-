@@ -1,11 +1,11 @@
 # vue-calc-app
-APPLICATION IS IN THE DEVELOPMENT STAGE
+Simple calculator app built using Vue CLI.
 
-Simple calculator built using Vue.
 
 ## Project setup
 ```
 npm install
+npm install -g nodemon
 ```
 
 ### Compiles and hot-reloads for development
@@ -22,6 +22,3 @@ npm run build
 ```
 npm run lint
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
